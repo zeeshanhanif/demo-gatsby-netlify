@@ -4,7 +4,7 @@ exports.handler = async (event, context) => {
     const subject = event.queryStringParameters.name || 'World'
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: `Hello New update data ${subject}` }),
+      body: JSON.stringify({ message: `Hello update on netlify ${subject}` }),
       // // more keys you can return:
       // headers: { "headerName": "headerValue", ... },
       // isBase64Encoded: true,
